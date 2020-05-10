@@ -1,0 +1,27 @@
+<div class="container__elem">
+<div class="caption">Book Events</div>
+<div class='login'>
+<div class='login__title'>Login</div>
+<form  [formGroup]="myForm" (ngSubmit)="submitHandler()">
+    <div class='form_elem'>
+        <mat-form-field>
+            <input matInput placeholder="email" formControlName="email">
+            <mat-error *ngIf="email.invalid && email.touched">email is not valid</mat-error>
+        </mat-form-field>
+    </div>
+    <div class='form_elem'>
+        <mat-form-field>
+            <input matInput placeholder="password" formControlName="password">
+            <mat-error *ngIf="password.invalid">invalid password</mat-error>
+        </mat-form-field>
+    </div>
+    <div class='form_elem'>
+            <mat-checkbox formControlName="agree" color="primary">Are you sure</mat-checkbox>
+    </div>
+    <button mat-raised-button [disabled]="myForm.invalid" color="accent">Submit</button>
+  </form>
+  <div class='form_elem'
+  *ngIf="success"
+  > You're logged in successfully</div>
+</div>
+</div>
