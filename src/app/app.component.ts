@@ -8,10 +8,7 @@ import { Router } from '@angular/router';
 })
 
 export class AppComponent {
-  title = 'bookNow';
-  isShow = false;
-  router: string;
-  constructor(public _router: Router){
+  constructor(){
   }
 
 }
