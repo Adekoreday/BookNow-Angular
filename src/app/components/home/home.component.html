@@ -1,2 +1,8 @@
 
 <div>welcomee home</div>
+<div class="events">
+    <div *ngFor="let item of allEvents  | keyvalue">
+        <app-card [Event]="item.value">
+        </app-card>
+    </div>
+</div>

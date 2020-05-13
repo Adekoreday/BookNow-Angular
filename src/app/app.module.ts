@@ -19,6 +19,7 @@ import { ToastrModule } from 'ngx-toastr';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { CardComponent } from './components/card/card.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { LandingComponent } from './components/landing/landing.component';
     HomeComponent,
     AlertComponent,
     NotfoundComponent,
-    LandingComponent
+    LandingComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
