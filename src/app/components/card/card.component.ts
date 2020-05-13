@@ -13,4 +13,8 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  bookEvent() {
+    console.log(this.Event.name, 'is now booked' );
+  }
+
 }
