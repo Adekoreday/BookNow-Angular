@@ -1,0 +1,8 @@
+<div class="card">
+    <div class="img__container">
+       <img class="about__img" src={{Event.imageUrl}} />
+    </div>
+    <div>{{Event.name}}</div>
+    <div *ngIf="Event.isPremium">Premium</div>
+    <div>{{Event.location}}</div>
+</div>
